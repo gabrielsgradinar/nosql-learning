@@ -6,4 +6,4 @@ down:
 	docker compose down --remove-orphans
 	
 exec:
-	docker exec -it mongodb mongosh
+	docker exec -it mongodb bash
