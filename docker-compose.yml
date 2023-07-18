@@ -8,5 +8,10 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: admin
       MONGO_INITDB_ROOT_PASSWORD: admin
+    volumes:
+      - dbdata:/data/db
 
-#  mongo --port 27017 -u "admin" -p "admin" --authenticationDatabase "admin"
+volumes:
+  dbdata:
+
+    #  mongo --port 27017 -u "admin" -p "admin" --authenticationDatabase "admin"

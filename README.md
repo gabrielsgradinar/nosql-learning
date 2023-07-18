@@ -14,3 +14,4 @@
 
 - consultar todos os documentos 
     - db.products.find()
+    - db.products.find().pretty()
