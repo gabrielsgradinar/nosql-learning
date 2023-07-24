@@ -10,10 +10,18 @@
 
 - criar uma collection
     - db.products.insertOne({name: "A Book", price: 12.99})
-    - db.products.insertMany()
+    - db.products.insertMany([{name: "A Video Game", price: 250.99}, {name: "A Paper", price: 0.99}])
     - se não existir cria a collection
 
 - consultar todos os documentos 
     - db.products.find()
     - db.products.find().pretty()
+    - db.products.find({price: {$lt: 50.99}})
+    - db.products.find({}, {name:1, _id:0})
     - db.products.findOne()
+
+- deletar documentos
+    - db.products.deleteOne({name: 'A CD'})
+
+- atualizar documento
+    - db.products.updateOne({name: 'A Book'}, { $set:{ name: 'Book'} })
