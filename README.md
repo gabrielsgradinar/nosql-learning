@@ -25,3 +25,11 @@
 
 - atualizar documento
     - db.products.updateOne({name: 'A Book'}, { $set:{ name: 'Book'} })
+
+### Modelagem dos dados
+
+- Qual dado a aplicação precisa ou gera ?
+- Onde preciso dos dados?
+- Qual tipo de dado ou informação que preciso mostrar ?
+- Com que frequência busco meus dados ?
+- Com que frequência eu escrevo ou atualizo os dados ?
